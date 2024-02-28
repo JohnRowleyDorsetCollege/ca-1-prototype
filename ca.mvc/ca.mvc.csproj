@@ -6,4 +6,9 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ca.domain\ca.domain.csproj" />
+    <ProjectReference Include="..\ca.lib\ca.services.csproj" />
+  </ItemGroup>
+
 </Project>

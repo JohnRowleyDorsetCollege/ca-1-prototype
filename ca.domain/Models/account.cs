@@ -9,10 +9,16 @@ namespace ca.domain
 {
     public class Account
     {
-        public Account(string _name)
+        public Account(string firstName, string lastName)
         {
-            name = _name;
+            name = GenerateName(firstName, lastName);
         }
         public string name { get; set; }
+
+        private string GenerateName(string firstName, string lastName)
+        {
+            name = $"{firstName}-{lastName}-001";
+            return name;
+        }
     }
 }
